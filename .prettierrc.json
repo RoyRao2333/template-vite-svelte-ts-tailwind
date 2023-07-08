@@ -9,11 +9,19 @@
   "bracketSpacing": true,
   "arrowParens": "always",
   "endOfLine": "lf",
-  "svelteSortOrder": "options-styles-scripts-markup",
+  "svelteSortOrder": "options-scripts-markup-styles",
   "svelteStrictMode": true,
-  "svelteBracketNewLine": false,
   "svelteAllowShorthand": false,
-  "svelteIndentScriptAndStyle": false,
+  "svelteBracketNewLine": true,
+  "svelteIndentScriptAndStyle": true,
   "tailwindConfig": "./tailwind.config.js",
-  "plugins": ["prettier-plugin-svelte", "prettier-plugin-tailwindcss"]
+  "plugins": ["prettier-plugin-svelte", "prettier-plugin-tailwindcss"],
+  "overrides": [
+    {
+      "files": "*.svelte",
+      "options": {
+        "parser": "svelte"
+      }
+    }
+  ]
 }
