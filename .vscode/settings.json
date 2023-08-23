@@ -1,3 +1,7 @@
 {
-  "prettier.documentSelectors": ["**/*.svelte"]
+  "prettier.documentSelectors": ["**/*.svelte"],
+  "tailwindCSS.experimental.classRegex": [
+    ["classNames\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+    ["twMerge\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ]
 }
